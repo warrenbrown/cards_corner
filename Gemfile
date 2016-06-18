@@ -23,6 +23,18 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'sprockets-rails'
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'font-awesome-sass'
+gem 'font-awesome-rails', '~> 4.3'
+gem 'simple_form', '~> 3.1.0'
+gem 'autoprefixer-rails'
+gem 'devise', '~> 3.5.1'
+
+gem 'devise_invitable'
+gem 'pundit'
+gem 'paperclip', '~> 4.3', '>= 4.3.5'
+
 group :test do
   gem 'capybara', '~> 2.4'
   gem 'selenium-webdriver', '~> 2.45'

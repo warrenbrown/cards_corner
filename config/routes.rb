@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get  'about'    => 'clean_blogs#about'
   get  'post'     => 'clean_blogs#post'
   get  'contact'  => 'clean_blogs#contact'
+
+  resources :articles
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
