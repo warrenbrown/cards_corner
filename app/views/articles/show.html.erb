@@ -2,7 +2,7 @@
 <% provide(:title, "Sample Post") %>
 
 <%= render 'shared/shim' %>
-
+  <%= link_to 'Delete Article', article_path(@article), method: :delete, data: { confirm: 'Are you sure you want to delete this article?'} %>
 
 <!-- Post Content -->
 <article>

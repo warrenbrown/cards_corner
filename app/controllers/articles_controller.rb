@@ -35,6 +35,14 @@ layout 'clean_blog', only: [ :new ]
     end
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+
+    @article.destroy
+    flash[:alert] = 'Article has been deleted.'
+    redirect_to root_path
+  end
+
   private
 
   def articles_params
