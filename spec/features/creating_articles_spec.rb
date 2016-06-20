@@ -14,6 +14,7 @@ RSpec.feature 'users can create articles' do
   end
 
   scenario 'with invalid attributes' do
+    fill_in 'Title', with: " "
     click_button 'Create Article'
 
     expect(page).to have_content 'Article has not been created.'

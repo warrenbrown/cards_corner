@@ -1,6 +1,4 @@
 class CleanBlogsController < ApplicationController
-	layout "clean_blog"
-
 	def index
 		@articles = Article.all
 	end

@@ -30,6 +30,7 @@ gem 'font-awesome-rails', '~> 4.3'
 gem 'simple_form', '~> 3.1.0'
 gem 'autoprefixer-rails'
 gem 'devise', '~> 3.5.1'
+gem "rolify"
 
 gem 'devise_invitable'
 gem 'pundit'

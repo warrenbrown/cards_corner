@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-layout 'clean_blog', only: [ :new ]
+  before_action :authenticate_user!, except: [:show ]
+
   def new
     @article = Article.new
   end
@@ -8,8 +9,8 @@ layout 'clean_blog', only: [ :new ]
     @article = Article.new(articles_params)
 
     if @article.save
-      flash[:notice] = 'Article has been created.'
-      redirect_to root_path
+      flash[:alert] = 'Article has been created.'
+      redirect_to article_path(@article)
     else
       render 'new'
     end
