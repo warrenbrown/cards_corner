@@ -1,0 +1,34 @@
+<div class="intro-header" style="background-image:
+url('http://www.madden-school.com/wp-content/uploads/2015/05/madden-16-peterson.jpg')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <% if current_page?(new_user_registration_path) %>
+            <div class="site-heading">
+                <h1>Signup Today</h1>
+                <hr class="small">
+                <span class="subheading">And get notifications on Cards Corner and the 220</span>
+            </div>
+          <% elsif current_page?(new_article_path)%>
+          <div class="site-heading">
+              <h1>Get Moving!</h1>
+              <hr class="small">
+              <span class="subheading">Add a new article for all your followers to see!</span>
+          </div>
+          <% elsif current_page?(new_user_session_path) %>
+          <div class="site-heading">
+              <h1>Get Moving!</h1>
+              <hr class="small">
+              <span class="subheading">Hurry up and login!</span>
+          </div>
+          <% elsif current_page?(edit_article_path) %>
+          <div class="site-heading">
+              <h1>Get to Editing</h1>
+              <hr class="small">
+              <span class="subheading">This gonna be a great article</span>
+          </div>
+          <% end %>
+        </div>
+    </div>
+</div>
+</div>
