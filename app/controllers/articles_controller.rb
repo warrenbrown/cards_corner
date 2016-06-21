@@ -26,8 +26,11 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-
+    if @article.published?
+      @article.published_at = Time.zone.now.strftime("%m/%d/%Y")
+    end
     if @article.update(articles_params)
+
       flash[:notice] = 'Article has been updated.'
       redirect_to @article
     else
@@ -47,6 +50,6 @@ class ArticlesController < ApplicationController
   private
 
   def articles_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :published, :sub_title, :published_at)
   end
 end
