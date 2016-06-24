@@ -1,7 +1,7 @@
 <% provide(:title, @article.title) %>
 
 <div class="intro-header" style="background-image:
-url('/assets/clean_blog/post-bg.jpg')">
+ url('/assets/clean_blog/madden17.jpg')">
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -43,8 +43,7 @@ url('/assets/clean_blog/post-bg.jpg')">
                 <hr>
 
                 <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-
+                  <%= image_tag @article.image, height: '300', width: '900', class: 'img-responsive' %>
                 <hr>
 
                 <!-- Post Content -->
@@ -73,7 +72,7 @@ url('/assets/clean_blog/post-bg.jpg')">
                 <!-- Comment -->
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                        <%= image_tag @article.image.url(:thumb) %>
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">Start Bootstrap

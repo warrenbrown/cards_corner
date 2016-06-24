@@ -2,6 +2,7 @@
   <%= simple_form_for(@article) do |f| %>
     <%= f.input :title %>
     <%= f.input :sub_title %>
+    <%= f.input :image, as: :file %>
     <%= f.input :body %>
     <%= f.input :published %>
     <%= f.button :submit %>
