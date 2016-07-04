@@ -1,0 +1,5 @@
+<%= simple_form_for [article, comment] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :body %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

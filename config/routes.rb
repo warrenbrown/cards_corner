@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+
   resources :images
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -11,7 +12,9 @@ Rails.application.routes.draw do
   get  'post'     => 'clean_blogs#post'
   get  'contact'  => 'clean_blogs#contact'
 
-  resources :articles
+  resources :articles do
+    resources :comments, only: [ :create ]
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
