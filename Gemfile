@@ -34,7 +34,7 @@ gem "rolify"
 gem 'devise_invitable'
 gem 'pundit'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk-v1'
 
 group :test do
   gem 'capybara', '~> 2.4'
