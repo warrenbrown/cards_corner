@@ -5,19 +5,22 @@
     <div class="row">
         <div class="col-lg-8 col-md-10">
           <% @articles.each do |article| %>
-                <div class="post-preview">
-                  <div class="media">
-                      <%= image_tag article.image.url(:thumb), class: 'media-object pull-left'%>
-                    <h2 class="post-title">
-                            <%= link_to article.title, article_path(article) %>
-                    </h2>
-                    <h3 class="post-subtitle">
-                        <%= article.sub_title %>
-                    </h3>
-                    <p class="post-meta">Posted by ShadowMunkey</a> on <%= article.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+            <% if article.published? %>
+
+                  <div class="post-preview">
+                      <div class="media">
+                          <%= image_tag article.image.url(:thumb), class: 'media-object pull-left'%>
+                        <h2 class="post-title">
+                                <%= link_to article.title, article_path(article) %>
+                        </h2>
+                        <h3 class="post-subtitle">
+                            <%= article.sub_title %>
+                        </h3>
+                        <p class="post-meta">Posted by ShadowMunkey</a> on <%= article.created_at.strftime("%A, %d %b %Y %l:%M %p") %></p>
+                      </div>
                   </div>
-                </div>
-            <hr>
+              <hr>
+              <% end %>
           <% end %>
 
             <!-- Pager -->
@@ -37,26 +40,12 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
-                            <li><a href="#">Category Name</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
