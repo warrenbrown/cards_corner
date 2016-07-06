@@ -31,6 +31,8 @@ gem 'autoprefixer-rails'
 gem 'devise', '~> 3.5.1'
 gem "rolify"
 
+gem 'soundcloud', '~> 0.3.2'
+
 gem 'devise_invitable'
 gem 'pundit'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'

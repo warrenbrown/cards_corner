@@ -6,6 +6,7 @@ Rails.application.config.assets.precompile += %w( clean_blog/manifest.js clean_b
 Rails.application.config.assets.precompile += %w( 220logo.png)
 Rails.application.config.assets.precompile += %w( favicon.ico )
 Rails.application.config.assets.precompile += %w( favicon.png )
+Rails.application.config.assets.precompile += %w( logo.jpg )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

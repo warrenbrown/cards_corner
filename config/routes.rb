@@ -8,8 +8,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'clean_blogs#index'
-  get  'about'    => 'clean_blogs#about'
-  get  'post'     => 'clean_blogs#post'
   get  'contact'  => 'clean_blogs#contact'
 
   resources :articles do
