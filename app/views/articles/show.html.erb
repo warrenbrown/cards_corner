@@ -98,7 +98,7 @@
 
             <div class="row">
               <% if @article.soundcloud_url != "" %>
-                <%= @article.soundcloud_url.html_safe %>
+                <%= @article.soundcloud_url.to_s.html_safe %>
               <% else %>
               <h5>No Podcast at this time.</h5>
               <% end %>
