@@ -97,8 +97,9 @@
             <h4>Podcast</h4>
 
             <div class="row">
-              <% if @article.soundcloud_url? %>
+              <% if @article.blank? %>
                 <%= @article.soundcloud_url.html_safe %>
+                hello
               <% end %>
             </div>
             <!-- /.row -->
