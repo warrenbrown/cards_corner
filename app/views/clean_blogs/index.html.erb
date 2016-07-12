@@ -38,16 +38,35 @@
             <div class="well">
                 <h4>Blog Categories</h4>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
+                  <div id="player">
 
-                        </ul>
+                    <div id="video-containger">
+                      <div id="screen">
+                        <i class="fa fa-play-circle-o fa-4x"></i>
+                      </div>
+                      <%= video_tag("220.mp4", id: 'video')  %>
                     </div>
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
 
-                        </ul>
+                    <div id="pbar-container">
+                      <div id="pbar">
+
+                      </div>
                     </div>
+
+                    <div id="buttons-container">
+                      <i class="fa fa-play-circle"></i>
+                      <div id="time-field">
+                        0:00 / 0:00
+                      </div>
+                      <i class="fa fa-volume-up" aria-hidden="true"></i>
+                      <div id="sbar-container">
+                        <div id="sbar"></div>
+                      </div>
+                      <i class="fa fa-expand" aria-hidden="true"></i>
+                    </div>
+
+
+                  </div>
                 </div>
                 <!-- /.row -->
             </div>
