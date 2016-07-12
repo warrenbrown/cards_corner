@@ -1,3 +1,4 @@
+$(document).ready(function(){
 window.addEventListener('load', function() {
 
   // Video container
@@ -31,7 +32,7 @@ window.addEventListener('load', function() {
   }, false);
 
 }, false);
-
+});
 function playOrPause() {
   if (video.paused) {
       video.play();
