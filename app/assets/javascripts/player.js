@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+  //player
+  $("#flip").click(function(){
+        $("#player").slideDown("slow");
+    });
 
   // Video container
   video = document.getElementById('video');
@@ -49,6 +52,7 @@ function updatePlayer() {
   if (video.ended) {
     window.clearInterval(update);
     playButton.className = "fa fa-repeat";
+    $("#player").slideUp(3000);
   }
 }
 

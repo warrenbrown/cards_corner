@@ -62,25 +62,21 @@
 
           <!-- Comments Form -->
           <div class="well">
-            <!-- <h4>Leave a Comment:</h4> -->
-            <!--- <form role="form">
+            <h4>Leave a Comment:</h4>
               <div class="form-group">
                   <%= render 'comments/form', article: @article, comment: @comment %>
               </div>
-            </form> -->
           </div>
 
           <hr>
 
           Posted Comments
-
-           Comment
           <% @article.comments.each do |comment| %>
             <div class="media">
               <a class="pull-left" href="#">
               </a>
               <div class="media-body">
-                <h4 class="media-heading">Cards Corner
+                <h4 class="media-heading"><%= comment.name %>
                   <small><%= comment.created_at %></small>
                 </h4>
                   <%= comment.body %>
@@ -109,7 +105,8 @@
           <!-- Side Widget Well -->
           <div class="well">
             <h4>Side Widget Well</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+            <a class="twitter-timeline" data-width="400" data-height="300" href="https://twitter.com/VSNgaming">Tweets by VSNgaming</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
 
         </div>

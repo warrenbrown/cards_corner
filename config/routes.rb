@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get  'contact'  => 'clean_blogs#contact'
 
   resources :articles do
-    resources :comments, only: [ :create ]
+    resources :comments, only: [ :create, :new ]
   end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
