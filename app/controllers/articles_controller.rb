@@ -13,8 +13,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(articles_params)
 
     if @article.save
-      flash[:notice] = 'Article has been created.'
-      redirect_to article_path(@article)
+      format.json { render :show, status: :created, location: @article }
 
     end
   end

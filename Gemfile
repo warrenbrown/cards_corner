@@ -37,6 +37,7 @@ gem 'devise_invitable'
 gem 'pundit'
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'aws-sdk-v1'
+gem 'video-js-rails', '~> 4.3', '>= 4.3.0.1'
 
 group :test do
   gem 'capybara', '~> 2.4'
