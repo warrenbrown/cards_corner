@@ -9,6 +9,7 @@ Rails.application.config.assets.precompile += %w( favicon.png )
 Rails.application.config.assets.precompile += %w( logo.jpg )
 Rails.application.config.assets.precompile += %w( 220.mp4 )
 Rails.application.config.assets.precompile += %w( logo6)
+Rails.application.config.assets.precompile += %w( logo copy)
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
