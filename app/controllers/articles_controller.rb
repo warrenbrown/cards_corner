@@ -13,8 +13,9 @@ class ArticlesController < ApplicationController
     @article = Article.new(articles_params)
 
     if @article.save
-      format.json { render :show, status: :created, location: @article }
-
+      redirect_to @article
+    else
+      render 'new'
     end
   end
 
