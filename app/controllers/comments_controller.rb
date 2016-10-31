@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
       redirect_to @article
     else
       flash.now[ :alert ] = 'Comment was not created.'
-      render @article
+      redirect_to article_path(@article)
     end
   end
 
