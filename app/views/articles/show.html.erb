@@ -87,14 +87,8 @@
 
         <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
-          <!-- Blog Video Well -->
-          <div class="well">
-            <h4>Video</h4>
-            <% if @article.youtube_url != "" %>
-                <%= @article.youtube_url.to_s.html_safe %>
-            <% end %>
-          </div>
-          <!-- Blog Categories Well -->
+
+          <!-- Blog Podcast Well -->
           <div class="well">
             <h4>Podcast</h4>
 
@@ -107,7 +101,17 @@
             </div>
             <!-- /.row -->
           </div>
-
+          <!-- Blog Video Well -->
+          <div class="well">
+            <h4>Video</h4>
+            <div class='row'>
+              <% if @article.youtube_url != "" %>
+                <%= @article.youtube_url.to_s.html_safe %>
+              <% else %>
+                No Video at this time
+              <% end %>
+            </div>
+          </div>
           <!-- Side Widget Well -->
           <div class="well">
             <h4>Social Media</h4>
