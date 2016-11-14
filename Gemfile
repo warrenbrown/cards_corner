@@ -30,6 +30,8 @@ gem 'simple_form', '~> 3.1.0'
 gem 'autoprefixer-rails'
 gem 'devise', '~> 3.5.1'
 gem "rolify"
+gem 'yt', '~> 0.13.7'
+gem 'rails-observers'
 
 gem 'soundcloud', '~> 0.3.2'
 
