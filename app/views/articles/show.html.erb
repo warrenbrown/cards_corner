@@ -87,7 +87,13 @@
 
         <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
-
+          <!-- Blog Video Well -->
+          <div class="well">
+            <h4>Video</h4>
+            <% if @article.youtube_url != "" %>
+                <%= @article.youtube_url.to_s.html_safe %>
+            <% end %>
+          </div>
           <!-- Blog Categories Well -->
           <div class="well">
             <h4>Podcast</h4>
